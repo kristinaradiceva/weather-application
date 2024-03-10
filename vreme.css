@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape')
+
+    
+}
+.card {
+    background: #000d00;
+    color: white;
+    padding: 0.6cm;
+    width: 15cm;
+    border-radius: 1cm;
+    height: 8cm;
+    max-width: 19cm;
+    margin: 1cm;
+    padding-top: 1cm;
+    
+}
+
+button {
+    margin: 0;
+    border: none;
+    height: 0.8cm;
+    border-radius: 1cm;
+    outline: none;
+    width: 0.8cm;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    color: #7c7c7c8b;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    height: 1cm;
+    width: 8cm;
+    border-radius: 0.3cm;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100% - 100px);
+    
+}
+.h1.temp{
+    margin: 0;
+    margin-bottom: 2cm;
+}
+.description {
+    text-transform: capitalize;
+    margin-left: 0.4cm;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading::after{
+    visibility: visible;
+    content: "Пребарајте локација";
+    font-size: 1cm;
+    color:white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
